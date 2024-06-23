@@ -1,0 +1,101 @@
+Operation stopped...
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Success)
+	Messages
+	* Warning 0x80049304: Data Flow Task 1: Warning: Could not open global shared memory to communicate with performance DLL; data flow performance counters are not available.  To resolve, run this package as an administrator, or on the system's console.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Prepare for Execute (Success)
+
+- Pre-execute (Success)
+
+- Executing (Success)
+
+- Copying to [dbo].[department] (Stopped)
+
+- Copying to [dbo].[employee1] (Error)
+	Messages
+	* Error 0xc0047022: Data Flow Task 1: SSIS Error Code DTS_E_PROCESSINPUTFAILED.  The ProcessInput method on component "Destination - department" (22) failed with error code 0xC0209029 while processing input "Destination Input" (35). The identified component returned an error from the ProcessInput method. The error is specific to the component, but the error is fatal and will cause the Data Flow task to stop running.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090e0: Data Flow Task 1: The final commit for the data insertion  in "Destination 2 - products" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090e0: Data Flow Task 1: The final commit for the data insertion  in "Destination 4 - student" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090e0: Data Flow Task 1: The final commit for the data insertion  in "Destination 3 - quantitys" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090df: Data Flow Task 1: The final commit for the data insertion in "Destination 1 - employee1" has started.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090e0: Data Flow Task 1: The final commit for the data insertion  in "Destination 1 - employee1" has ended.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Copying to [dbo].[products] (Error)
+	Messages
+	* Error 0xc0202009: Data Flow Task 1: SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005.
+	An OLE DB record is available.  Source: "Microsoft OLE DB Provider for SQL Server"  Hresult: 0x80004005  Description: "The statement has been terminated.".
+	An OLE DB record is available.  Source: "Microsoft OLE DB Provider for SQL Server"  Hresult: 0x80004005  Description: "Violation of PRIMARY KEY constraint 'PK__departme__BE2C1AEE0E216FD8'. Cannot insert duplicate key in object 'dbo.department'. The duplicate key value is (1).".
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0209029: Data Flow Task 1: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  The "Destination - department.Inputs[Destination Input]" failed because error code 0xC020907B occurred, and the error row disposition on "Destination - department.Inputs[Destination Input]" specifies failure on error. An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090df: Data Flow Task 1: The final commit for the data insertion in "Destination 2 - products" has started.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090df: Data Flow Task 1: The final commit for the data insertion in "Destination 3 - quantitys" has started.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x402090df: Data Flow Task 1: The final commit for the data insertion in "Destination 4 - student" has started.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Copying to [dbo].[quantitys] (Success)
+	* 4 rows transferred
+
+- Copying to [dbo].[student] (Success)
+	* 6 rows transferred
+
+- Copying to [dbo].[sysdiagrams] (Stopped)
+
+- Copying to [dbo].[targets] (Stopped)
+
+- Copying to [dbo].[tb1productsales] (Stopped)
+
+- Copying to [dbo].[vwEmployeeByDepartment] (Stopped)
+
+- Post-execute (Success)
+	Messages
+	* Information 0x4004300b: Data Flow Task 1: "Destination - department" wrote 4 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 1 - employee1" wrote 6 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 2 - products" wrote 4 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 3 - quantitys" wrote 4 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 4 - student" wrote 6 rows.
+	 (SQL Server Import and Export Wizard)
+	
+
+
+
